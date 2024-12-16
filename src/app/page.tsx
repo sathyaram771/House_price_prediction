@@ -39,7 +39,7 @@ const Home: React.FC = () => {
     setPrediction(null);
 
     try {
-      const response = await axios.post("http://74f0-34-75-58-184.ngrok-free.app/predict", {
+      const response = await axios.post("https://fda3-35-245-31-191.ngrok-free.app", {
         features: Object.values(features),
       });
       setPrediction(response.data.prediction[0]);
